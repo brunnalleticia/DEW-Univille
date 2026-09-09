@@ -14,7 +14,7 @@
     <h2>TVs</h2>
     <ul class="product-list">
         <li>
-            <img src="./images/Sansung" alt="Imagem da televisão Sansung 55 polegadas">
+            <img src="./images/Sansung.png" alt="Imagem da televisão Sansung 55 polegadas">
             <h3>Marca: Sansung</h3>
             <h4>R$3.000,00</h4>
             <h5>R$300 em 10x sem juros</h5>
@@ -22,7 +22,7 @@
                 href="https://www.google.com/aclk?sa=L&ai=DChsSEwit2Z7Fo-CWAxVvWEgAHUNzE9gYACICCAEQCBoCY2U&co=1&ase=2&gclid=Cj0KCQjw5P7UBhDaARIsAOSlS1PkLiMScCz3v3kGxhKrb31EVsPrfxWW-eInsDUwYcPygSQXbuMwhMwaAkarEALw_wcB&cid=CAAS0gHkaGzQReoF8_xO36vXsd3OdausBIwPSqZbjYiuyp1ASxVbncye85QUwzFFZvZYKLucC08BaBZASH-DgIQU_Mr3StUOesSX8Q3lyH4lPyFbFQyd0GAfiSx5T_dQ1nErfEvSRsi543HOEGyJS71TwozVpgQqRDQP0KLuBdbJVuwL1RyZkniF6q-p4fWMvoE1RZUBWq56zWcn9m5fWnYZjIgfxryr_07diz_aqNDmEN_GfSLk9-ozzeWp7nrX-Ezo5VyfkqbnXfFcBG6S_o_3JFXn4z0&cce=2&category=acrcp_v1_32&sig=AOD64_1UwEiP3bHVG8HZWgXuACbNOXEU5A&ctype=5&q=&nis=4&ved=2ahUKEwjdgZfFo-CWAxV1rZUCHW9KJa8Q5bgDKAB6BAgMEAs&adurl=/p">Detalhes</a>
         </li>
         <li>
-            <img src="./images/LG.jpg" alt="Imagem da televisão LG 55 polegadas">
+            <img src="./images/LG.png" alt="Imagem da televisão LG 55 polegadas">
             <h3>Marca: LG</h3>
             <h4>R$2.800,00</h4>
             <h5>R$280,00 em 10x sem juros</h5>
