@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang= "pt-BR"> 
+<html>
 
 <head>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendas de acessorios para TVs</title>
+    <meta name="description" content="Loja online de Tvs e acessorios com os melhores preços." />
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
+    <h1>Categoria de produtos </h1>
+    <h2>Acessórios para TVs</h2>
+    <ul class="product-list">
+        <li>
+            <img src="./images/suporteTV.webp" alt="Imagem suporte Articulado para TV">
+            <h3>R$150,00</h3>
+            <h4>R$15,00 em 10x</h4>
+            <a
+                href="https://www.bing.com/aclick?ld=e8CHQ12LZtWPBmtKmBPrT9pzVUCUxbp2HJ9cVscfkdLTHVv0GNHSUP_Tc89MyVmP-_z51Ahpqq24DRbn4cb7KRGc7KP2pWzQa7CYlEW4ubAjcdMnCwrpgKGgnLPjRkEY7nf-IXJd7BJUow2NxiiPT1JvfazvhZIb6qhrA-5mp1Tl5eXNdVYCFy7hNzhDVOJO5nUuUei4q1V2CtItT5AoWb4Ev7-K8&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbS5iciUyZkFydGljdWxhZG8tUG9sZWdhZGFzLVVuaXZlcnNhbC1JbmNsaW4lMjVDMyUyNUExdmVsLVJlZm9yJTI1QzMlMjVBN2FkbyUyZmRwJTJmQjBINFMyQkJOTSUyZnJlZiUzZGFzY19kZl9CMEg0UzJCQk5NJTNmdGFnJTNkYnJibmdzaHBkc2stMjAlMjZsaW5rQ29kZSUzZGRmMCUyNmh2YWRpZCUzZDc2NjkxMTc0NTY4ODg5JTI2aHZuZXR3JTNkbyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMjkzNDgyJTI2aHZ0YXJnaWQlM2RwbGEtNDU4MDI5MDU4MjYzMjcxMyUyNnBzYyUzZDElMjZtc2Nsa2lkJTNkYjc3YmRjNDQ2NTk2MTRkODM0NTliNmU0Y2ZlZjYxNTg&rlid=b77bdc44659614d83459b6e4cfef6158&ntb=1">Detalhes</a>
+        </li>
+    </ul>
 </body>
-
-</html>
