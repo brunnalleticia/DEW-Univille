@@ -1,9 +1,8 @@
-/* Custom Properties (Variáveis) */
+
 :root {
     --primary-color: #0066cc;
 }
 
-/* Tipografia e Títulos */
 h1, h2, h3, h4, h5, p {
     text-align: center;
 }
@@ -17,12 +16,11 @@ p::first-letter {
     text-transform: uppercase;
 }
 
-/* Links */
 a:hover {
     text-decoration: none;
 }
 
-/* Listas */
+
 #primary-list,
 .product-list {
     list-style: none;
@@ -33,7 +31,7 @@ a:hover {
     text-align: center;
 }
 
-/* Produtos (.product-list) */
+
 .product-list {
     margin: 0;
 }
@@ -55,7 +53,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Imagens */
+
 img {
     display: block;
     margin: 0 auto;
