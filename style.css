@@ -1,15 +1,6 @@
-
-:root {
-    --primary-color: #0066cc;
-}
-
-h1, h2, h3, h4, h5, p {
-    text-align: center;
-}
-
 h1 {
+    text-transform: uppercase;
     font-size: 30px;
-    margin-bottom: 10px;
 }
 
 p::first-letter {
@@ -18,45 +9,79 @@ p::first-letter {
 
 a:hover {
     text-decoration: none;
+    opacity: 0.5;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
 
-#primary-list,
-.product-list {
-    list-style: none;
+h2, h3, h4 {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
     padding: 0;
 }
 
-#primary-list {
+main {
+    padding: 20px;
+}
+
+.banner {
+    background-image: url("imagens/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding: 10px;
+    background-color: darkkhaki;
+    width: 100%;
+}
+
+.header .nav {
     text-align: center;
 }
 
-
-.product-list {
-    margin: 0;
-}
-
-.product-list li {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.product-list a {
+.header .nav li {
     display: inline-block;
-    margin-top: 8px;
-    color: var(--primary-color);
-    font-weight: bold;
-    text-decoration: none;
+    margin-right: 10px;
 }
 
-.product-list a:hover {
-    text-decoration: underline;
+#primary-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
+#primary-list li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
-img {
+.product-list img {
     display: block;
-    margin: 0 auto;
-    max-width: 150px;
+    margin: auto;
+    width: auto;
     height: auto;
+    max-width: 100%;
+    max-height: 150px;
 }
