@@ -1,24 +1,5 @@
-h1 {
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-p::first-letter {
-    text-transform: uppercase;
-}
-
-a:hover {
-    text-decoration: none;
-    opacity: 0.5;
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-}
-
-h2, h3, h4 {
-    font-size: 14px;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -30,6 +11,38 @@ main {
     padding: 20px;
 }
 
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+/* Utilitários */
 .banner {
     background-image: url("imagens/banner.jpg");
     background-repeat: no-repeat;
@@ -42,6 +55,7 @@ main {
     display: none;
 }
 
+/* Cabeçalho */
 .header {
     position: sticky;
     top: 0;
@@ -55,27 +69,45 @@ main {
     text-align: center;
 }
 
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .header .nav li {
     display: inline-block;
     margin-right: 10px;
 }
 
-#primary-list {
-    list-style: none;
-    padding: 0;
+/* Rodapé */
+footer {
+    padding: 20px;
+    background-color: #607d8b;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 }
 
-#primary-list li {
+/* Lista de produtos: grid container */
+.product-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas de largura igual */
+    gap: 10px 20px;                     /* linha coluna */
+    grid-auto-flow: row;                /* itens lado a lado */
+    justify-items: center;              /* centraliza os itens na horizontal */
+    align-items: stretch;               /* itens preenchem a altura da linha */
+    align-content: center;              /* centraliza o grid na vertical */
+}
+
+/* Grid item (card do produto) */
+.product-list li {
     border: 1px solid #ddd;
     padding: 15px;
-    width: 250px;
-    max-width: 100%;
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
 }
 
 .product-list img {
@@ -85,4 +117,49 @@ main {
     height: auto;
     max-width: 100%;
     max-height: 150px;
+}
+
+/* Exercício 3 (ct-tvs 4): áreas de template, só na página de TVs */
+.page-category-tvs .product-list {
+    grid-template-areas:
+        "product3 . product1"
+        ". product2 .";
+}
+
+.page-category-tvs .product-1 {
+    grid-area: product1;
+}
+
+.page-category-tvs .product-2 {
+    grid-area: product2;
+}
+
+.page-category-tvs .product-3 {
+    grid-area: product3;
+}
+
+
+@media (max-width: 1024px) {
+    .product-list,
+    .page-category-tvs .product-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: none;
+    }
+
+    .page-category-tvs .product-1,
+    .page-category-tvs .product-2,
+    .page-category-tvs .product-3 {
+        grid-area: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-list,
+    .page-category-tvs .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+main > p {
+    text-align: center;
 }
